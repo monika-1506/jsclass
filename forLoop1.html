@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>forLoop1</title>
+</head>
+<body>
+ <input type="number" id="digit">
+ <button onclick="forLoop()">for</button>
+ 
+ <script type="text/javascript">
+ 	function forLoop(){
+ 		for(i=-10;i<30;i++){
+ 			var number= parseInt(document.getElementById('digit').value);
+ 			console.log(i+ "hello for loop");
+ 			if(i==20){
+ 				break;
+ 			}
+ 			/*if(i==20){
+ 				continue;
+ 				
+ 			}*/
+ 		}
+
+ 		
+ 	}
+ </script>
+ 
+
+
+</body>
+</html>
