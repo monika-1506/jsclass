@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>while Loop</title>
+</head>
+<body>
+	<input type="number" id="digit"><br><br>
+ <button onclick="forLoop()">for</button><br><br>
+ <button onclick="whileLoop()">while</button><br><br>
+ <button onclick="doWhileLoop()">DO</button><br><br>
+ <script type="text/javascript">
+ 	function forLoop(){
+ 		for(i=-10;i<=70;i=i++){
+ 			var number= parseInt(document.getElementById('digit').value);
+ 			var result=i*number;
+ 			console.log(result+ "hello for loop");
+ 			if(i==30){
+ 				break;
+ 			}
+ 			/*if(i==20){
+ 				continue;
+ 				
+ 			}*/
+ 		}
+
+ 		
+ 	}
+ </script>
+ <script>
+        var j=1;
+ 	function whileLoop(){
+ 		while(j<50){
+ 			
+ 			var number= parseInt(document.getElementById('digit').value);
+ 			console.log(j+ "hello javascript");
+ 			j= j+5;
+ 			
+
+
+ 		}
+ 	}
+ </script>
+ <script>
+ 	var k=1;
+ 	 function doWhileLoop(){
+           do{ 
+
+
+ 	            console.log(k+ "hello do while loop");
+ 	            k= k+3;
+                   
+
+              } while(k<=30)
+ }
+
+
+
+
+
+
+
+
+
+
+
+ </script>
+</body>
+</html>
