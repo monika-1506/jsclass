@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>object Creation</title>
+</head>
+<body>
+<script>
+	var person = new Object();
+	person.fname = 'annu';
+	person.lname = 'dhull';
+	person.age = 22;
+	console.log(person);
+
+</script>
+
+<script>
+	var student= [
+	
+       {name :'ram',age: 22,},
+       {name :'karan',age: 32,},
+       {name :'ramesh',age: 42,}
+       
+       
+	
+	];
+	console.log('array of object'+"")
+	console.log(student);
+	// print object in loop //
+	for(var a=0; a < student.length; a++){
+
+       console.log (student[a].name+ ""+student[a].age+ " ");
+
+
+	}
+
+</script>
+</body>
+</html>
