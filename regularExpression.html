@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regular Expresion in JS</title>
+</head>
+<body>
+	<input type="text" placeholder="username" id="user"><br><br>
+<button onclick="validate()">check</button><br><br>
+<h1>regular expression for email validation</h1>
+	<h1>\d= match any digit (equal to [0-9])</h1>
+	<h1>\w= match any word character equal to (0-9,a-z,A-Z, & -)</h1>
+	<h1>\s= match white space character (eg - spaces & tabs)</h1>
+	<h1>\t= match a tab only </h1><br>
+	<p> {6} it means  we repeat 6 times any digit, number, character
+	for grouping any expressions we use  round braces for each part of expression like in email we use 4 or 3 round braces.</p><br><br>
+	<h1> any regular expression stats from //<br> and if we use<br> /^any validation value $/<br> this means we fix our starting and ending points.<br>/\./ it means dot is use in expression</h1>
+
+
+
+<script>
+
+	function validate(){
+		
+
+
+		var username= (document.getElementById('user').value);
+		//regular expressions are treated as object in js//
+		//var regx = /[a-z]{4}15/;//i used for case insenstive//
+		var regx= /^([a-zA-Z0-9\.]+)@([a-z0-9]+).([a-z]{2,15}).([a-z]{2,10})?$/ //email validation
+		if(regx.test(username))
+		{
+			console.log('valid username');
+
+        }
+		else{
+			console.log('invalid username');
+		}
+	}
+
+</script>
+
+</body>
+</html>
