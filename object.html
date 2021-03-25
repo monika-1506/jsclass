@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>objects</title>
+</head>
+<body>
+<script>
+	var a = {
+		fname : "monika",
+		lname : "kohar",
+		rollno : 41,
+		email : "monikakohar890@gmail.com",
+	   month : ['monday','feb','mar','apr'],//array 
+	   living: {
+	   	'city': 'chandigarh',
+	   	'country': 'india'
+	   },//object created inside a object
+	   salary : function(){
+	   	return 25000;
+	   },
+	   fullname: function(){
+	   	return this.fname + "" +this.lname;
+	   }
+
+	}
+	console.log(a);
+	console.log(a.living.city);
+
+</script>
+
+</body>
+</html>
